@@ -51,7 +51,6 @@ import termios
 import tty
 import pigpio
 import time
-from thread import start_new_thread
 
 bright = 255
 r = 255.0
@@ -136,7 +135,7 @@ def checkKey():
 			abort = True
 			break
 
-start_new_thread(checkKey, ())
+checkKey()
 
 
 print ("+ / - = Increase / Decrease brightness")
