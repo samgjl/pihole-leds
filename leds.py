@@ -3,7 +3,7 @@ from gpiozero import LED, PWMLED
 from signal import pause
 import time
 
-GPIO.setmode(GPIO.BCM)
+# GPIO.setmode(GPIO.BCM)
 GPIO.setup(17, GPIO.OUT)
 GPIO.setup(22, GPIO.OUT)
 GPIO.setup(24, GPIO.OUT)
@@ -49,6 +49,8 @@ if __name__ == "__main__":
     color(0, 255, 0)
     time.sleep(1)
     color(0, 0, 255)
+    time.sleep(1)
+    color(255, 255, 0)
     time.sleep(1)
     color(115, 79, 150)
     time.sleep(3)
