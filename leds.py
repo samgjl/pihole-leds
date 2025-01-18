@@ -52,5 +52,7 @@ if __name__ == "__main__":
     time.sleep(1)
     color(255, 255, 0)
     time.sleep(1)
+    off()
+    time.sleep(1)
     color(115, 79, 150)
     time.sleep(3)
