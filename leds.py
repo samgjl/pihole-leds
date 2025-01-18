@@ -4,9 +4,9 @@ from signal import pause
 import time
 
 # GPIO.setmode(GPIO.BCM)
-GPIO.setup(17, GPIO.OUT)
-GPIO.setup(22, GPIO.OUT)
-GPIO.setup(24, GPIO.OUT)
+# GPIO.setup(17, GPIO.OUT)
+# GPIO.setup(22, GPIO.OUT)
+# GPIO.setup(24, GPIO.OUT)
 
 RED = PWMLED(17)
 GREEN = PWMLED(22)
