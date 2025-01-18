@@ -1,5 +1,5 @@
 import RPi.GPIO as GPIO
-from gpiozero import LED
+from gpiozero import LED, PWMLED
 from signal import pause
 import time
 
