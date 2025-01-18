@@ -61,7 +61,7 @@ brightChanged = False
 abort = False
 state = True
 
-pi = pigpio.pi()
+pi = pigpio.pi(line="raspberrypi.local")
 
 def updateColor(color, step):
 	color += step
