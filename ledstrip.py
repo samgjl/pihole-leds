@@ -1,4 +1,4 @@
-from gpiozero import LED, PWMLED
+from gpiozero import LED, PWMLED, LEDBoard
 from signal import pause
 import time
 
