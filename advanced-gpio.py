@@ -1,17 +1,15 @@
-import RPi.GPIO as GPIO
-import time
+from gpiozero import PWMLED
+from time import sleep
 
-p = GPIO.PWM(12, 50)  # channel=12 frequency=50Hz
-p.start(0)
+led = PWMLED(12)
+
 try:
-    while 1:
-        for dc in range(0, 101, 5):
-            p.ChangeDutyCycle(dc)
-            time.sleep(0.1)
-        for dc in range(100, -1, -5):
-            p.ChangeDutyCycle(dc)
-            time.sleep(0.1)
+    while True:
+        for value in range(0, 101, 5):
+            led.value = value / 100  # PWMLED value must be between 0 and 1
+            sleep(0.1)
+        for value in range(100, -1, -5):
+            led.value = value / 100
+            sleep(0.1)
 except KeyboardInterrupt:
     pass
-p.stop()
-GPIO.cleanup()
