@@ -16,6 +16,15 @@ GPIO Control:
 """
 
 print([RED, GREEN, BLUE])
-print([RED.pin, GREEN.pin, BLUE.pin])
-print([RED.on(), GREEN.on(), BLUE.on()])
+# print([RED.pin, GREEN.pin, BLUE.pin])
+# print([RED.on(), GREEN.on(), BLUE.on()])
+RED.on()
+time.sleep(1)
+RED.off()
+GREEN.on()
+time.sleep(1)
+GREEN.off()
+BLUE.on()
+time.sleep(1)
+BLUE.off()
 pause()
