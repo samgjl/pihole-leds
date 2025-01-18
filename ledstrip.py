@@ -8,6 +8,6 @@ print(leds)
 
 # while True:
 #     leds.value = (1, 0, 0)
-leds.value = (255, 255, 255)
+leds.value = (200, 200, 200)
 
 pause()
