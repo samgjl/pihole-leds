@@ -20,9 +20,9 @@ print([RED, GREEN, BLUE])
 # print([RED.on(), GREEN.on(), BLUE.on()])
  
 def color(r: float, g: float, b: float):
-    RED.value = r
-    GREEN.value = g
-    BLUE.value = b
+    RED.value = r/255
+    GREEN.value = g/255
+    BLUE.value = b/255
 
 def on():
     RED.on()
@@ -36,14 +36,14 @@ def off():
 
 if __name__ == "__main__":
     on()
-    time.sleep(3)
+    time.sleep(1)
     off()
-    time.sleep(3)
-    color(1, 0, 0)
-    time.sleep(3)
-    color(0, 1, 0)
-    time.sleep(3)
-    color(0, 0, 1)
-    time.sleep(3)
-    color(1, 1, 1)
-    time.sleep(3)
+    time.sleep(1)
+    color(255, 0, 0)
+    time.sleep(1)
+    color(0, 255, 0)
+    time.sleep(1)
+    color(0, 0, 255)
+    time.sleep(1)
+    color(115, 79, 150)
+    time.sleep(1)
