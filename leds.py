@@ -25,9 +25,9 @@ print([RED, GREEN, BLUE])
 # print([RED.on(), GREEN.on(), BLUE.on()])
  
 def color(r: float, g: float, b: float):
-    RED.value = r # /255
-    GREEN.value = g #/ 255
-    BLUE.value = b #/ 255
+    RED.value = r /255
+    GREEN.value = g / 255
+    BLUE.value = b / 255
 
 def on():
     RED.on()
