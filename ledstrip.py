@@ -6,5 +6,8 @@ import time
 leds = LEDBoard(red=17, green=22, blue=24)
 print(leds)
 
-while True:
-    leds.value = (1, 0, 0)
+# while True:
+#     leds.value = (1, 0, 0)
+leds.value = (1, 0, 0)
+
+pause()
