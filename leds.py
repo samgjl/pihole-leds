@@ -8,9 +8,9 @@ import time
 # GPIO.setup(22, GPIO.OUT)
 # GPIO.setup(24, GPIO.OUT)
 
-RED = PWMLED(17)
-GREEN = PWMLED(22)
-BLUE = PWMLED(24)
+RED = PWMLED(17, frequency=1000)
+GREEN = PWMLED(22, frequency=1000)
+BLUE = PWMLED(24, frequency=1000)
 """
 We're using a 3-pin LED strip, so we can control each color individually.
 the pins are as follows:
